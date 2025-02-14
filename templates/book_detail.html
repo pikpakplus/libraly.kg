@@ -1,0 +1,40 @@
+
+
+<!-- Контент с информацией о фильме -->
+<div class="container mt-4">
+    <div class="movie-card">
+        <div class="card">
+            <img src="{{ book_id.image.url }}" class="card-img-top" alt="Фильм">
+            <div class="card-body">
+                <h5 class="card-title">{{ book_id.title }}</h5>
+                <p class="card-text">{{ book_id.description }}</p>
+                <p><strong>Цена книги:</strong>{{ book_id.price }}</p>
+                <p><strong>Дата издания:</strong>{{ book_id.created_at }}</p>
+                <p><strong>Жанр:</strong>{{ book_id.genre }}</p>
+                <p><strong>станицы:</strong>{{ book_id.pages }}</p>
+                <p><strong>Автор:</strong>{{ book_id.author }}</p>
+                <iframe width="100%" height="315" src="{{ book_id.audio_book }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок для комментариев -->
+    <div class="comment-section">
+        <h5>Комментарии</h5>
+        <div class="comment">
+            <p> (2024-09-24): Крутая книга! Рекомендую! <strong>Оценка:</strong> 5</p>
+        </div>
+    </div>
+</div>
+
+<!-- Футер -->
+<footer>
+    © 2024 Ваш Сайт:
+    <a class="text-reset fw-bold" href="#" style="color: yellow;">ВашСайт.com</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
