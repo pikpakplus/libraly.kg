@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'book',
-    'clothes'
+    'clothes',
+    'work_age',
 ]
 
 MIDDLEWARE = [

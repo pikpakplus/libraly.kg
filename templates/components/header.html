@@ -45,7 +45,8 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link enable" href="#" style="color: yellow;">Регистрация</a>
+                    <a class="nav-link enable" href="{% url 'work_age:register' %}"
+                       style="color: yellow;">Регистрация</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link enable" href="#" style="color: yellow;">Другие книги</a>
@@ -53,7 +54,7 @@
                 <li class="nav-item">
                     <a class="nav-link enable" href="#" style="color: yellow;">Итоговая Контрольная работа</a>
                 </li>
-              </ul>
+            </ul>
             <form class="d-flex" role="search" method="get" action="{% url 'search' %}">
                 <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск" name="q">
                 <button class="btn btn-outline-success" type="submit" style="color: yellow; border-color: yellow;">
