@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'book',
     'clothes',
     'work_age',
+    'recipe',
 ]
 
 MIDDLEWARE = [
